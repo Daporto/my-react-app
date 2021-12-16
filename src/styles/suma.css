@@ -1,0 +1,21 @@
+h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first-line {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-line {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 13rem;
+    padding-top: 2rem;
+}

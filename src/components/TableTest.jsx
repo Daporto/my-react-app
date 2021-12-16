@@ -1,8 +1,10 @@
 import { FormCheck, Table, Button } from "react-bootstrap";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const TableTest = () => {
   const [users, setUsers] = useState([]);
+  const navigate = useNavigate();
 
   const handleButton = () => {
     const table = document.getElementById("usersTable2");
@@ -22,6 +24,7 @@ const TableTest = () => {
       }
     }
     setUsers([...newUsers]);
+    navigate('/login');
   };
 
   return (

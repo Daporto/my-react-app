@@ -5,11 +5,11 @@ const AuthContext = createContext();
 
 const AuthProvider = (props) => {
     
-    const [user, setUser] = useState(localStorage.getItem("user"));
+    const [user, setUser] = useState();
 
     const login = (user) => {
         setUser(user);
-        localStorage.setItem("user",JSON.stringify(user));
+        //localStorage.setItem("user",JSON.stringify(user));
     }
 
     const isLogin = () => {
